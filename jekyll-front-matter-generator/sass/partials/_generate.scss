@@ -1,0 +1,67 @@
+h3.center{
+    text-align: center;
+    color: $main-color;
+}
+
+// generator styles
+.generator {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    background: $white;
+}
+
+.btn {
+    @extend a;
+    border: 2px solid currentColor;
+    padding: 3px 5px;
+    border-radius: 3px;
+    position: relative;
+    top: 12px;
+    line-height: 2;
+}
+
+h2,
+h3 {
+    color: $allports-blue;
+}
+
+h1 {
+    color: $bahama-blue;
+    text-align: center;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    font-family: $main-font;
+}
+
+.count {
+    font-size: .7em;
+    text-align: right;
+}
+
+.desc {
+    color: $deep-cerulean-blue;
+    font-size: .8em;
+    border-top: 1px solid $deep-cerulean-blue;
+    margin-top: 3px;
+}
+
+.result {
+    textarea {
+        font-family: $code-font;
+    }
+}
+
+.warn {
+    color: red;
+}
+
+.msg {
+    color: green;
+    margin-top: 20px;
+}

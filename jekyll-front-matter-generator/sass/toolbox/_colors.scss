@@ -1,0 +1,17 @@
+// TOOLBOX COLORS
+//---------------------------------------------------------------------
+$white: #FDFDFD;
+$black: #202020;
+$darkgray: #333;
+
+// PROJECT COLORS
+//---------------------------------------------------------------------
+$bahama-blue: #005899;
+$scorpion-gray: #5E5E5E;
+
+$amaranth-pink: #E91E63;
+
+// Palette
+$deep-cerulean-blue: adjust-hue($bahama-blue, -20deg);
+$allports-blue: adjust-hue($bahama-blue, -10deg);
+$silver-chalice-gray: invert($scorpion-gray);

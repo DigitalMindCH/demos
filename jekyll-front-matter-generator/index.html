@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>DigitalMind - Jekyll Front Matter Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="digitalmind.ch">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="description" content="demopage jekyll front matter generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="digitalmind.ch">
+    <meta name="keywords" content="jekyll, generator, demo">
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:500,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Vollkorn:400,400italic" rel="stylesheet" type="text/css">
+  </head>
+  <!-- head end-->
+  <body class="generate">
+    <div class="generator">
+      <h1>jekyll Front Matter Generator</h1>
+      <h3 class="center">read <a href="POSTLINK">blog post</a></h3>
+      <form>
+        <h2>file kind</h2>
+        <input id="post" type="radio" name="type" value="post" checked>
+        <label for="post">Post</label>
+        <input id="page" type="radio" name="type" value="page">
+        <label for="page">Page</label><br>
+        <div class="global">
+          <h2>global variables</h2>
+          <label for="title">title</label>
+          <input id="title" type="text" name="title" maxlength="55"><br>
+          <label for="subtitle">subtitle</label>
+          <input id="subtitle" type="text" name="subtitle">
+          <p class="desc">subtitle is not restricted in length</p><br>
+          <label for="title-check">title = URL title</label>
+          <input id="title-yes" type="radio" name="title-check" value="no" checked>
+          <label for="title-yes">yes</label>
+          <input id="title-no" type="radio" name="title-check" value="yes">
+          <label for="title-no">no</label>
+          <div class="desc">title of the post and title to be used in the URL can differ from each other. Check no if you want to set a different link title.</div>
+          <div class="url-title">
+            <label for="url">URL title</label>
+            <input id="url" type="text" name="url" maxlenght="55">
+          </div><br>
+          <label for="tags">tags</label>
+          <input id="tags" type="text" name="tags" placeholder="tag1, tag2, tag3">
+          <p class="desc">tags for the document. Separate with commas</p><br>
+          <label for="desc">description</label>
+          <textarea id="desc" type="text" name="description" maxlenght="115"></textarea>
+          <p class="desc">meta description used for SEO purposes</p><br>
+        </div>
+        <!-- global end-->
+        <div class="post">
+          <h2>post variables</h2>
+          <label for="author">author</label>
+          <input id="author" type="text" name="author" placeholder="author.id">
+          <p class="desc">author id as defined within <code>_data/authors.yml</code></p><br>
+          <label for="header-pic">featured image</label>
+          <input id="header-pic" type="text" name="header-image" placeholder="imagename.jpg">
+          <p class="desc">featured image. it should be at least 1500px wide, in .jpg (not .jpeg file name) or .png Place the folder within <code>img/featured-imgs</code> and run grunt after. Here only place the image file name with file-type ending.</p><br>
+        </div>
+        <!-- post end-->
+        <div class="page">
+          <h2>Page Variables</h2>
+          <label for="page-header">header</label>
+          <input id="header-yes" type="radio" name="page-header" value="yes" checked>
+          <label for="header-yes">yes</label>
+          <input id="header-no" type="radio" name="page-header" value="no">
+          <label for="header-no">no</label>
+          <p class="desc">decide whether to add a header image or not</p>
+          <div class="page-header-pic">
+            <label for="page-header-pic">header image</label>
+            <input id="page-header-pic" type="text" name="header-image">
+            <p class="desc">header image. it should be at least 1500px wide, in .jpg (not .jpeg file name) or .png Place the folder within <code>img/header-pic</code> and run grunt after. Here only place the image file name with file-type ending.</p>
+          </div><br>
+          <label for="menudisplay">display in Menu</label>
+          <input id="header-yes" type="radio" name="menudisplay" value="yes" checked>
+          <label for="menu-yes">yes</label>
+          <input id="header-no" type="radio" name="menudisplay" value="no">
+          <label for="menu-no">no</label>
+          <p class="desc">decide if the page should appear in the menu or not.</p>
+          <div class="menudisplay">
+            <label for="menudisplay-order">Menu Order Number</label>
+            <input id="menudisplay-order" type="number" name="menudisplay-order">
+            <p class="desc">order number for the menu (decide at what position the item should appear)</p>
+          </div>
+        </div>
+        <!-- page end-->
+        <div class="global">
+          <h2>content (in markdown)</h2>
+          <textarea id="content" name="content" style="height:300px"></textarea>
+        </div><br>
+      </form>
+      <!-- form end-->
+      <hr><span class="btn generatefile">Generate</span><br><br>
+      <div class="warn"></div>
+      <div class="result">
+        <textarea id="inputTextToSave"></textarea><br><span onclick="saveTextAsFile()" class="btn saving">Save File</span>
+        <div class="msg"></div>
+      </div>
+    </div>
+    <script src="/js/jquery-2.1.3.js"></script>
+    <script src="/js/rangyinputs-jquery.min.js"></script>
+    <script src="/js/element_resize_detection.js"></script>
+    <script src="/js/js-markdown-extra.js"></script>
+    <script src="/js/jquery.meltdown.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+  <!-- body end-->
+</html>
+<!-- html end-->

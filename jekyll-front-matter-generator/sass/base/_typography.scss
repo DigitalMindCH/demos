@@ -1,0 +1,57 @@
+// FONT-FACE STUFF HERE
+//-----------------------
+
+// Roboto
+//--------
+
+// light
+@font-face {
+    font-family: 'Roboto';
+    $path-part: 'Light';
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff'),
+         url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// bold
+@font-face {
+    font-family: 'Roboto';
+    $path-part: 'Bold';
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff'),
+         url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// light italic
+@font-face {
+    font-family: 'Roboto';
+    $path-part: 'LightItalic';
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff'),
+         url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+// bold italic
+@font-face {
+    font-family: 'Roboto';
+    $path-part: 'BoldItalic';
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot');
+    src: url('../fonts/Roboto-#{$path-part}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.woff') format('woff'),
+         url('../fonts/Roboto-#{$path-part}-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-#{$path-part}-webfont.svg#RobotoBoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}

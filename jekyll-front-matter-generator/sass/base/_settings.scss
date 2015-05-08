@@ -1,0 +1,102 @@
+// Shortcuts
+//-----------
+$noborder: 0 solid transparent;
+
+// SETTINGS FOR BASE-STYLE
+//-------------------
+
+// yes/no variables (use yes or no as values)
+//--------------------------------------------
+
+// if set to yes a background-color will be added to body
+$background-color-setting: yes;
+
+// if set to yes a transition will be applied to links
+$link-transition: yes;
+
+// decide if links will be underlined or not
+$link-line-default: no;
+$link-line-hover: no;
+
+// if set to yes, each paragraph following after another,
+// will have a margin-top
+$paragraph-gap: yes;
+
+// if set to yes, settings for a container class will be added
+$container-settings: yes;
+
+// if set to yes, some more minimal defaults for tags will be restored (as in: cite, input, textarea etc.)
+$extended-defaults: yes;
+
+// if set to yes blockquotes will be styled with a border on the left, padding and margin
+$include-blockquote-style: no;
+
+// if set to yes tables will be styled according to settings
+$include-table-style: yes;
+
+// if set to yes, defintion lists will be styled
+$include-definition-list-style: no;
+
+// if set to yes, WordPress default classes will be added
+$inlcude-WordPress-kit: no;
+
+// color variables (use colors as values)
+//----------------------------------------
+
+$main-color: $black;
+$link-color: $bahama-blue;
+$link-hover-color: $amaranth-pink;
+
+// String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
+//------------------------------------------
+
+$main-font: 'Roboto', 'Calibri', 'Arial', sans-serif;
+
+// set to $main-font if you don't want your headings to use another font
+$headings-font: $main-font;
+
+// use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
+$headings-text-transform: none;
+
+$code-font: 'Source Code Pro', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+
+// size variables (use numbers as values (units as indicated ))
+
+// font-weights, alternatively use: [light, normal, bold]
+$main-font-weight: 300;
+
+// set $main-font-weight if you don't want your headings to use another font-weight
+$headings-font-weight: 700;
+
+// use px here
+$root-font-size: 19px;
+
+// do not add a unit here
+$basic-line-height: 1.6;
+
+// yes/no-dependant
+//------------------
+// if the dependant variable is set to no,
+// the variables can be ignored
+
+// depends on: $background-color-setting
+$background-color: rgba($bahama-blue, .1);
+
+// depends on: $paragraph-gap
+$paragraph-gap-size: 5px;
+
+// depends on: $container-settings
+$container-class-name: 'container';
+$container-background-color: transparent;
+$container-max-width: 1200px; // use px here
+$container-width: 80%; // use % here
+
+// depends on: $include-blockquote-style
+$blockquote-border: 1px solid rgba(black, 0.3);
+
+// depends on: $include-table-style
+$table-border: 1px solid rgba(black, 0.1);
+$even-rows-bg: rgba(black, 0.02);
+
+// depends on: $include-definition-list-style
+$definition-list-border: 1px solid rgba(black, 0.1);
